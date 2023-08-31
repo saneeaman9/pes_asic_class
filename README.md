@@ -142,6 +142,11 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
   synth -top good_mux 
   abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   ```
+  ![4](https://github.com/saneeaman9/pes_asic_class/assets/75088597/10bcbe8b-708c-4286-b991-3ac649634181)
+
+  ![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/b25b3f47-a1ee-49ed-b098-38497d3a194b)
+
+  
   
 </details>
 
