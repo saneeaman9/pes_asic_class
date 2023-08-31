@@ -16,7 +16,9 @@ chmod 755 run.sh
 
 ## CourseWork
 
+### Week 1
 
+</br>
     
 <details>
   <summary> Week 1 : Day 1 - Introduction to RISCV ISA and GNU Compiler Toolchain </summary>
