@@ -114,7 +114,7 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
   <summary>Day 1 : Introduction to Verilog RTL design and Synthesis
 </summary>
 
-  ## Loading and verifying functionality of a design.
+  ## Task 1 : Loading and verifying functionality of a design.
 
   * After installation of tools run these commands to verify a design.
 
@@ -131,8 +131,17 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
   
   ![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/1e684563-1204-4286-80e6-4b942f309654)
 
+  ## Task 2 : Labs using Yosys and Sky130 PDKs.
 
+  * Run there commands in the required folder.
 
+  ```bash
+  yosys
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  read_verilog good_mux.v
+  synth -top good_mux 
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  ```
   
 </details>
 
