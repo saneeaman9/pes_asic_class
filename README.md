@@ -124,7 +124,15 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
     ./a.out
     gtkwave tb_good_mux.vcd
   ```
+  ![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/dcb825d3-6e07-417e-8f1f-61cae1baf730)
 
+  **gtkwave simulation**
+  
+  ![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/1e684563-1204-4286-80e6-4b942f309654)
+
+
+
+  
 </details>
 
 
