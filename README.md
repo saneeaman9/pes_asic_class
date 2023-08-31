@@ -157,16 +157,13 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
     write_verilog -noattr good_mux_netlist.v 
     !gvim good_mux_netlist.v 
     ```
+    ![Screenshot from 2023-08-31 19-29-57](https://github.com/saneeaman9/pes_asic_class/assets/75088597/28ef6435-524e-4ce0-84e7-11523a8212de)
+
   
   </br>
 
   * Simplified netlist.
-
-
-
-
-
-
+   ![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/29662e25-e2b3-4bba-9217-4a342b45549e)
   
   
 </details>
