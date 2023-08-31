@@ -18,8 +18,6 @@ chmod 755 run.sh
 
 ### Week 1
 
-</br>
-    
 <details>
   <summary> Week 1 : Day 1 - Introduction to RISCV ISA and GNU Compiler Toolchain </summary>
   <br>
@@ -107,4 +105,35 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
 ## Spike Simulation
 
 ![Screenshot from 2023-08-21 09-10-32](https://github.com/ramdev604/pes_asic_class/assets/43489027/64e49c93-a6e6-42f4-a187-1c789809ce21)
+</details>
+
+
+### Week 2
+
+<details>
+  <summary>Day 1</summary>
+
+  ## Loading and verifying functionality of a design.
+
+  * After installation of tools run these commands to verify a design.
+
+  ```bash
+    sudo -s
+    cd /VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+    iverilog good_mux.v tb_good_mux.v
+    ./a.out
+    gtkwave tb_good_mux.vcd
+  ```
+
+</details>
+
+
+<details>
+  <summary>Day 2</summary>
+</details>
+
+
+<details>
+  <summary>Day 3</summary>
+  s
 </details>
