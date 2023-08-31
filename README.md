@@ -111,7 +111,8 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
 ### Week 2
 
 <details>
-  <summary>Day 1</summary>
+  <summary>Day 1:Introduction to Verilog RTL design and Synthesis
+</summary>
 
   ## Loading and verifying functionality of a design.
 
