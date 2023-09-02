@@ -157,13 +157,16 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
     write_verilog -noattr good_mux_netlist.v 
     !gvim good_mux_netlist.v 
     ```
-    ![Screenshot from 2023-08-31 19-29-57](https://github.com/saneeaman9/pes_asic_class/assets/75088597/28ef6435-524e-4ce0-84e7-11523a8212de)
-
   
   </br>
 
   * Simplified netlist.
-   ![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/29662e25-e2b3-4bba-9217-4a342b45549e)
+
+
+
+
+
+
   
   
 </details>
@@ -171,6 +174,75 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
 
 <details>
   <summary>Day 2</summary>
+
+  ### Task 1
+
+    ```bash
+     vim ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    ```
+  ![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/11a09ee1-5608-4ff9-842d-6dc1e9b19520)
+
+  ![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/3394a377-bd16-4fab-ae4b-ba09c93326cf)
+
+  ![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/e8c20cbe-3bdb-4546-9e2e-5d10fb941946)
+
+  ![4](https://github.com/saneeaman9/pes_asic_class/assets/75088597/7c62a951-15c6-4427-86f5-7e2b4959c0bd)
+
+
+
+
+
+  ### Task 2
+
+  **Systhesis**
+
+  ```bash
+  yosys
+read_liberty -lib ../lib//sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show multiple_modules
+```
+![6](https://github.com/saneeaman9/pes_asic_class/assets/75088597/77f01800-b5a2-47e5-961f-75d4759ac852)
+
+![5](https://github.com/saneeaman9/pes_asic_class/assets/75088597/8380fa74-755f-4939-94c1-03fdfc4df31e)
+
+
+```bash
+write_verilog multiple_modules_hier.v
+!vim multiple_modules_hier.v 
+```
+![7](https://github.com/saneeaman9/pes_asic_class/assets/75088597/594cc847-0123-4f1a-a208-6d496ca6a582)
+
+
+### Task 3
+
+  **Various Flop Coding Styles and optimization**
+
+  *For async reset.
+  
+  ```bash
+  iverilog dff_asyncres.v tb_dff_asyncres.v
+./a.out
+gtkwave tb_dff_asyncres.vcd 
+  ```
+
+  ![8](https://github.com/saneeaman9/pes_asic_class/assets/75088597/d02386d3-cdf2-4814-a77f-73e424bbd6c3)
+
+
+  *For async set
+
+  ```bash
+  iverilog dff_async_set.v tb_dff_async_set.v
+./a.out
+gtkwave tb_dff_async_set.vcd
+  ```
+
+  ![9](https://github.com/saneeaman9/pes_asic_class/assets/75088597/07a8f950-b776-4b0e-9171-0179d9e1b4c4)
+
+
+
 </details>
 
 
