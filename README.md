@@ -242,7 +242,41 @@ gtkwave tb_dff_async_set.vcd
   ![9](https://github.com/saneeaman9/pes_asic_class/assets/75088597/07a8f950-b776-4b0e-9171-0179d9e1b4c4)
 
 
+### Task 4
 
+**Systhesizing all 3 codes**
+
+```bash
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_asyncres.v
+synth -top dff_asyncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib//sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+1
+
+```bash
+read_verilog dff_async_set.v
+synth -top dff_async_set
+dfflibmap -liberty ../lib//sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+2
+
+```bash
+read_verilog dff_syncres.v
+synth -top dff_syncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+3
 </details>
 
 
