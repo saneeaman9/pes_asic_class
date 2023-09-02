@@ -220,7 +220,7 @@ write_verilog multiple_modules_hier.v
 
   **Various Flop Coding Styles and optimization**
 
-  *For async reset.
+  * For async reset.
   
   ```bash
   iverilog dff_asyncres.v tb_dff_asyncres.v
@@ -231,7 +231,7 @@ gtkwave tb_dff_asyncres.vcd
   ![8](https://github.com/saneeaman9/pes_asic_class/assets/75088597/d02386d3-cdf2-4814-a77f-73e424bbd6c3)
 
 
-  *For async set
+  * For async set
 
   ```bash
   iverilog dff_async_set.v tb_dff_async_set.v
