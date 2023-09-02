@@ -256,7 +256,8 @@ abc -liberty ../lib//sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
-1
+![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/f940444d-260f-47a7-bc22-a656a2854321)
+
 
 ```bash
 read_verilog dff_async_set.v
@@ -266,7 +267,8 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
-2
+![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/b2bfb0f9-af02-4a50-8797-ac8a9644ecc7)
+
 
 ```bash
 read_verilog dff_syncres.v
@@ -276,7 +278,8 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
-3
+![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/d05b8cd7-70f0-4565-b885-dc94e48cf250)
+
 </details>
 
 
