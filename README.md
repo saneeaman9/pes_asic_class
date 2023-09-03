@@ -364,7 +364,8 @@ dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
-1
+![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/9a6b245e-deb6-4715-86d2-010ac0a36628)
+
 
 *Synthesis*
 
@@ -374,7 +375,8 @@ synth -top dff_const2
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
-2
+![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/453fe0a2-5f8c-4ae2-a319-04227691898d)
+
 
 *GTKWave*
 
@@ -384,7 +386,7 @@ show
   gtkwave tb_dff_const3.vcd 
 ```
 
-3
+![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/a58e99df-c6d8-482f-91bb-a770b7e14f22)
 
 *Synthesis*
 
@@ -397,7 +399,8 @@ show
   show  
 ```
 
-4
+![4](https://github.com/saneeaman9/pes_asic_class/assets/75088597/56d4c345-c487-4c6b-9611-79372ebc9107)
+
 
 ### Task 3 : Sequential logic optimizations for unused outputs
 
@@ -411,14 +414,16 @@ show
   abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   show  
   ```
-  5
+  ![5](https://github.com/saneeaman9/pes_asic_class/assets/75088597/e72541a3-477c-4559-8297-b7ce830cb6b4)
+
 
   ```bash
   cp counter_opt.v counter_opt2.v
   vim  counter_opt2.v
   ```
 
-  6
+  ![6](https://github.com/saneeaman9/pes_asic_class/assets/75088597/e669f0c0-e5ed-4674-9697-c92d975a2eb0)
+
 
   ```bash
   read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -429,5 +434,5 @@ show
   show
   ```
 
-  7
+![7](https://github.com/saneeaman9/pes_asic_class/assets/75088597/78c5fec2-8c05-44eb-9a6d-22dd2a278615)
 </details>
