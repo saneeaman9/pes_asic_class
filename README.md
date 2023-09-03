@@ -351,7 +351,83 @@ gtkwave tb_dff_const2.vcd
 
 ![8](https://github.com/saneeaman9/pes_asic_class/assets/75088597/ebcd95d9-3b9e-407f-95a5-3b4b7a7cb7a6)
 
+</br>
 
+*Synthesis*
 
+```bash
+  yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const1.v
+synth -top dff_const1
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+1
 
+*Synthesis*
+
+```bash
+read_verilog dff_const2.v
+synth -top dff_const2
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+2
+
+*GTKWave*
+
+```bash
+  iverilog dff_const3.v tb_dff_const3.v
+  ./a.out
+  gtkwave tb_dff_const3.vcd 
+```
+
+3
+
+*Synthesis*
+
+```bash
+  yosys
+  read_verilog dff_const3.v
+  synth -top dff_const3
+  dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  show  
+```
+
+4
+
+### Task 3 : Sequential logic optimizations for unused outputs
+
+  *Synthesis*
+
+  ```bash
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  read_verilog  counter_opt.v
+  synth -top counter_opt
+  dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  show  
+  ```
+  5
+
+  ```bash
+  cp counter_opt.v counter_opt2.v
+  vim  counter_opt2.v
+  ```
+
+  6
+
+  ```bash
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  read_verilog counter_opt2.v
+  synth -top counter_opt
+  dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.li
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  show
+  ```
+
+  7
 </details>
