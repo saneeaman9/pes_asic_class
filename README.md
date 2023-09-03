@@ -450,9 +450,11 @@ show
       gtkwave tb_ternary_operator_mux.vcd
     ```
 
-    1
+   ![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/cba57d76-f6a0-4fb2-87bb-41474b8b97de)
 
-    2
+
+   ![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/9c5d388b-502b-4136-9964-1cc4601cb565)
+
 
     ```bash
       iverilog bad_mux.v  tb_bad_mux.v
@@ -461,7 +463,8 @@ show
     ```
   
 
-  3
+  ![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/73a3fa80-3a3b-4dbe-9974-daef82891ba4)
+
 
   __Synthesize bad_mux.v using yosys and generate a bad_mux_net.v netlist__
 
