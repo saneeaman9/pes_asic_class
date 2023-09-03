@@ -436,3 +436,35 @@ show
 
 ![7](https://github.com/saneeaman9/pes_asic_class/assets/75088597/78c5fec2-8c05-44eb-9a6d-22dd2a278615)
 </details>
+
+
+<details>
+  <summary>Day 4 : GLS, blocking vs non-blocking and Synthesis-Simulation mismatch</summary>
+
+  ### Task 1
+
+    ```bash 
+      vim ternary_operator_mux.v -o bad_mux.v -o good_mux.v
+      iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+      ./a.out
+      gtkwave tb_ternary_operator_mux.vcd
+    ```
+
+    1
+
+    2
+
+    ```bash
+      iverilog bad_mux.v  tb_bad_mux.v
+      ./a.out
+      gtkwave tb_bad_mux.vcd
+    ```
+  
+
+  3
+
+  __Synthesize bad_mux.v using yosys and generate a bad_mux_net.v netlist__
+
+  __Now simulate using iverilog__
+
+</details>
