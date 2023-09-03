@@ -288,23 +288,26 @@ show
   
   ### Task 1 Combinational logic optimizations
 
-    3
+   ![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/527877b0-45c3-4307-8c4b-2c14078edd8f)
+
 
     ```bash 
     read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog opt_check.v
-synth -top opt_check 
-opt_clean -purge
-abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-show
-read_verilog opt_check2.v
-synth -top opt_check2
-abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
-show
+    read_verilog opt_check.v
+    synth -top opt_check 
+    opt_clean -purge
+    abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    show
+    read_verilog opt_check2.v
+    synth -top opt_check2
+    abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+    show
     ```
 
-    1
-    
+   ![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/6e7349c4-1dc1-4885-aa42-ab34dda3b4ea)
+
+   ![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/cb434a5c-0c95-4f02-9cd7-02f0b08fe375)
+
     
 *Synthesis*
 </br>
@@ -323,12 +326,15 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
-4
-5
+![4](https://github.com/saneeaman9/pes_asic_class/assets/75088597/6c515ee8-c8a0-414e-84da-4ec07599d3e8)
+
+![5](https://github.com/saneeaman9/pes_asic_class/assets/75088597/ccc1c53d-8ea2-4966-b862-fd6eef262e60)
+
 
 ### Task 2 : Sequential Logic Optimizations
 
-6
+![6](https://github.com/saneeaman9/pes_asic_class/assets/75088597/68b02ecf-346c-43f6-b0e9-aaf914635828)
+
 
 *Synthesis*
 
@@ -341,8 +347,10 @@ iverilog dff_const2.v  tb_dff_const2.v
 ./a.out
 gtkwave tb_dff_const2.vcd 
 ```
-7
-8
+![7](https://github.com/saneeaman9/pes_asic_class/assets/75088597/f3787239-029e-409d-9314-1d19bb8854d9)
+
+![8](https://github.com/saneeaman9/pes_asic_class/assets/75088597/ebcd95d9-3b9e-407f-95a5-3b4b7a7cb7a6)
+
 
 
 
