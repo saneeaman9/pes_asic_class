@@ -10,7 +10,7 @@
 ```bash
   git clone https://github.com/kunalg123/riscv_workshop_collaterals
 cd riscv_workshop_collaterals
-chmod 755 run.sh
+chmod 755 run.sh
 ./run.sh 
 ```
 
@@ -284,6 +284,66 @@ show
 
 
 <details>
-  <summary>Day 3</summary>
-  s
+  <summary>Day 3 : Combinational and sequential optmizations</summary>
+  
+  ### Task 1 Combinational logic optimizations
+
+    3
+
+    ```bash 
+    read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check.v
+synth -top opt_check 
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+read_verilog opt_check2.v
+synth -top opt_check2
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+    ```
+
+    1
+    
+    
+*Synthesis*
+</br>
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog opt_check3.v
+synth -top opt_check3
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+read_verilog opt_check4.v
+synth -top opt_check4
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+4
+5
+
+### Task 2 : Sequential Logic Optimizations
+
+6
+
+*Synthesis*
+
+```bash
+vim dff_const1.v -o dff_const2.v
+iverilog dff_const1.v  tb_dff_const1.v
+./a.out
+gtkwave tb_dff_const1.vcd
+iverilog dff_const2.v  tb_dff_const2.v
+./a.out
+gtkwave tb_dff_const2.vcd 
+```
+7
+8
+
+
+
 </details>
