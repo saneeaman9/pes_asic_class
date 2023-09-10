@@ -513,19 +513,22 @@ prep -design picorv32a
   run_synthesis
    ```
 
-2
+![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/04f94d6d-af37-40a9-b70d-3ef5be9e896c)
 
 **Synthesis Result**
 
-img
+![synthesis result](https://github.com/saneeaman9/pes_asic_class/assets/75088597/ccc0ee82-5d12-4063-a978-5373520f2013)
+
 
 **Report**
 
-img
+![report](https://github.com/saneeaman9/pes_asic_class/assets/75088597/605f0c34-1eb2-4cde-aa39-8ca457169ce5)
+
 
 **D FF Ratio Calculation**
 
-img
+![dff ratio](https://github.com/saneeaman9/pes_asic_class/assets/75088597/bfd197ff-5ace-4764-a164-efdc6f74b24d)
+
 
 </details>
 
