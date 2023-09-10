@@ -480,13 +480,17 @@ show
   <summary>Day 1 : Inception of open-source EDA, OpenLANE and Sky130 PDK
 </summary>
 
+</br>
+
 **OpeLANE directory structure**
 
-1
+![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/bbd00f12-51f5-45bc-81fe-18c7b16ca72c)
+
 
 **Config.tcl**
 
-insert img
+![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/746ddc16-31b7-4d4f-944f-1dc0bbe9439f)
+
 
 **Design preparation**
 
@@ -500,9 +504,8 @@ package require openlane 0.9
 prep -design picorv32a
 
 ```
-insert imgs
 
-
+![Screenshot from 2023-09-11 03-34-32](https://github.com/saneeaman9/pes_asic_class/assets/75088597/335b7bd7-eef3-4c23-8aaf-090fc7920a50)
 
 
 </details>
