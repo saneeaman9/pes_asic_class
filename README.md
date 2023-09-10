@@ -507,6 +507,25 @@ prep -design picorv32a
 
 ![Screenshot from 2023-09-11 03-34-32](https://github.com/saneeaman9/pes_asic_class/assets/75088597/335b7bd7-eef3-4c23-8aaf-090fc7920a50)
 
+* Now synthesize the design using command 
+
+```bash
+  run_synthesis
+   ```
+
+2
+
+**Synthesis Result**
+
+img
+
+**Report**
+
+img
+
+**D FF Ratio Calculation**
+
+img
 
 </details>
 
