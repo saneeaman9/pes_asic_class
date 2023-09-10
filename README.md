@@ -471,3 +471,58 @@ show
   __Now simulate using iverilog__
 
 </details>
+
+
+
+### Week 3
+
+<details>
+  <summary>Day 1 : Inception of open-source EDA, OpenLANE and Sky130 PDK
+</summary>
+
+**OpeLANE directory structure**
+
+1
+
+**Config.tcl**
+
+insert img
+
+**Design preparation**
+
+```bash
+docker
+pwd
+/openLANE_flow
+ls -ltr
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+
+```
+insert imgs
+
+
+
+
+</details>
+
+
+<details>
+  <summary>Day 2 :</summary>
+</details>
+
+
+<details>
+  <summary>Day 3 :</summary>
+</details>
+
+
+<details>
+  <summary>Day 4 :</summary>
+</details>
+
+
+<details>
+  <summary>Day 5 :</summary>
+</details>
