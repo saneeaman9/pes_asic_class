@@ -21,6 +21,7 @@ chmod 755 run.sh
 <details>
   <summary> Week 1 : Day 1 - Introduction to RISCV ISA and GNU Compiler Toolchain </summary>
   <br>
+![1](https://github.com/saneeaman9/pes_asic_class/assets/75088597/20cc79d8-c737-4c31-a9ac-b7ac7975d151)
 
 
 
@@ -32,6 +33,7 @@ gcc sum1ton.c
 ```
 
 
+![2](https://github.com/saneeaman9/pes_asic_class/assets/75088597/2f8043a7-17c9-49bc-ac83-eb54774cb178)
 
 
 
@@ -43,6 +45,7 @@ riscv64-unknown-elf-objdump -d 1_to_N.o | less (in new tab)
 ```
 ## Spike Simulation
 
+![3](https://github.com/saneeaman9/pes_asic_class/assets/75088597/9a7214db-a379-4cff-808a-350683c5ddf1)
 
 
 
@@ -58,10 +61,7 @@ spike pk unsignedHighest.o
 ```
 
 
-
-
-
-## For the signed number 
+![4](https://github.com/saneeaman9/pes_asic_class/assets/75088597/9586e089-78ab-47e6-94de-423ef1320f1e)
 
 
 
@@ -92,6 +92,7 @@ cat load.S
 ```
 
 
+![5](https://github.com/saneeaman9/pes_asic_class/assets/75088597/68055afc-49e2-42c4-8bf3-5450df934f92)
 
 
 
@@ -101,6 +102,9 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_cus
 spike pk 1to9_custom.o
 riscv64-unknown-elf-objdump -d 1to9_custom.o | less
 ```
+
+![6](https://github.com/saneeaman9/pes_asic_class/assets/75088597/64604c6c-07e8-47c0-9def-9648e5e1007f)
+
 
 ## Spike Simulation
 
